@@ -1,0 +1,40 @@
+/* Contact form */
+.wp-block-ept-cookie-banner{
+  color:white;
+  background-color: rgb(51, 51, 51);
+  width: 100%;
+  border-radius: 12px 12px 0px 0px;
+  position: fixed;
+  bottom: 0px;
+  left:0px;
+}
+
+.wp-block-ept-cookie-banner .content {
+  padding:3rem;
+  padding-right:20rem;
+  padding-left:20rem;
+}
+
+.wp-block-ept-cookie-banner #reject-cookies {
+  background-color: red;
+}
+
+.wp-block-ept-cookie-banner #accept-cookies {
+  background-color: rgb(85, 80, 80);
+}
+
+.wp-block-ept-cookie-banner .content>button {
+  margin-right :1rem;
+  margin-left:1rem;
+  margin-top:2rem;
+  padding:.6rem;
+  border-radius: 2rem;
+}
+
+
+.wp-block-ept-cookie-banner .content >button:hover {
+  background-color: rgb(133, 131, 131) !important;
+}
+.wp-block-ept-cookie-banner .content .hidden {
+  display:none !important;
+}
