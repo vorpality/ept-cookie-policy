@@ -5,9 +5,7 @@ function ept_cookie_register_blocks() {
         [ 'name' => 'banner', 'options' => [
         'render_callback' => 'ept_cookie_banner_render_cb'
         ]],
-        [ 'name' => 'locationeer', 'options' => [
-            'render_callback' => 'ept_cookie_locationeer_render_cb'
-            ]],
+ 
     ];
  
     foreach($blocks as $block){

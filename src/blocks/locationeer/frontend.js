@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const field = document.getElementById('user-address');
   if (field != null) {
     var geocoder;
-    // Create the script tag, set the appropriate attributes
     var script = document.createElement('script');
     script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDY56cwNRUcmVLV3LpSUUwjPWx4TQJHr3I&libraries=places&callback=initMap';
     script.async = true;
@@ -51,7 +50,8 @@ locationForm.addEventListener('submit', event =>{
     event.preventDefault();
     var expires = new Date();
     expires.setMonth(expires.getMonth() + 12);
-    document.cookie = 'policy=accept;expires='+expires+';path=/'
+    document.cookie = 'location=set;expires='+expires+';path=/'
+    console.log(document.cookie);
     banner.classList.add('hidden');
   })
   const rejectButton = document.querySelector('#skip-location');
@@ -60,7 +60,7 @@ locationForm.addEventListener('submit', event =>{
     
     var expires = new Date();
     expires.setMonth(expires.getHours() + 1);
-    document.cookie = 'policy=skip;expires='+expires+';path=/'
+    document.cookie = 'location=skip;expires='+expires+';path=/'
     banner.classList.add('hidden');
   })
 })
