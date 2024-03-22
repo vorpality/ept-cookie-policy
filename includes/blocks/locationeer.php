@@ -14,7 +14,7 @@ ob_start();
       <form id = "location-form">
         <input type = "text" id = "user-address"></input>
         <input type = "submit" id = "submit-location"></input>
-</form>
+      </form>
       <button id = "skip-location"> <?php _e('Skip location.', 'e-potis');?></button>
     </div>
   </div>
