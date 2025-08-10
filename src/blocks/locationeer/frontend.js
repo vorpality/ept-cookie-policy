@@ -38,8 +38,8 @@ locationForm.addEventListener('submit', event =>{
   event.preventDefault();
   var expires = new Date();
   expires.setMonth(expires.getMonth() + 12);
-  document.cookie = 'location.lat='+lat+';expires='+expires+';path=/'
-  document.cookie = 'location.lng='+lng+';expires='+expires+';path=/'
+  document.cookie = 'location_lat='+lat+';expires='+expires+';path=/'
+  document.cookie = 'location_lng='+lng+';expires='+expires+';path=/'
   banner.classList.add('hidden');
 
 })
